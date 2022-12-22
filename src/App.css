@@ -1,38 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--font-family);
+	background-color: var(--bg);
+}
+
+button {
+	border: none;
+	background: transparent;
+}
+
+a {
+	text-decoration: none;
+}
 .App {
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrap {
+	width: 1140px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg {
+	position: absolute;
+	background-image: url(./assets/backgraund.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	width: 100%;
+	height: calc(100vh + 30px);
+	z-index: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ball {
+	position: absolute;
 }
-
-.App-link {
-  color: #61dafb;
+.ball:nth-child(1) {
+	top: 40px;
+	left: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ball:nth-child(2) {
+	top: 55px;
+	left: 282px;
+}
+.ball:nth-child(3) {
+	bottom: 31px;
+	left: 0;
+}
+.ball:nth-child(4) {
+	top: 246px;
+	right: 236px;
+}
+.ball:nth-child(5) {
+	bottom: 52px;
+	right: -170px;
+}
+.Arrow {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin: 0 auto;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom: 58px;
+	animation: anim_up_down 2s ease infinite;
+}
+@keyframes anim_up_down {
+	0% {
+		bottom: 58px;
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		bottom: 35px;
+	}
 }
