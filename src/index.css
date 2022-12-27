@@ -3,9 +3,10 @@
 :root {
 	--font-family: 'Montserrat', sans-serif;
 
-	--bg: #f8f8f8;
+	--bg: #ccc;
 
 	--green: #13e780;
 	--blue: #03daf2;
 	--white: #fff;
+	--purple: #ba03f2;
 }

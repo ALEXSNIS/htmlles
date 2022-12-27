@@ -1,0 +1,39 @@
+.Main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.section {
+	position: relative;
+	padding: 100px 0;
+	overflow: hidden;
+}
+.section:nth-child(1) {
+	padding-bottom: 2%;
+	width: 100%;
+	background-color: #f8f8f8;
+	border-radius: 0px 0px 50% 50% / 0px 0px 3% 3%;
+	z-index: 0;
+	margin-bottom: 100px;
+}
+.ball:nth-child(2) {
+	width: 360px;
+	height: 360px;
+	bottom: 200px;
+	left: -200px;
+	background: linear-gradient(0deg, #41a79f, #25cf8c);
+}
+.ball:nth-child(3) {
+	width: 93px;
+	height: 93px;
+	top: 40px;
+	right: 15px;
+	background: linear-gradient(0deg, #41a79f, #25cf8c);
+}
+.ball:nth-child(4) {
+	width: 208px;
+	height: 208px;
+	top: 184px;
+	right: -170px;
+	background: linear-gradient(90deg, #41a79f, #25cf8c);
+}

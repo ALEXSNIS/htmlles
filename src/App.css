@@ -3,7 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: var(--font-family);
 	background-color: var(--bg);
@@ -17,51 +19,76 @@ button {
 a {
 	text-decoration: none;
 }
+ellipse {
+	border-radius: 100%;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: red;
+}
+
 .App {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+.main {
+	position: absolute;
+}
 .wrap {
-	width: 1140px;
+	width: 1112px;
+}
+.headerBg {
+	background-color: #f8f8f8;
+	width: 100%;
+	height: 100vh;
 }
 .bg {
-	position: absolute;
-	background-image: url(./assets/backgraund.svg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50%;
+	position: relative;
 	width: 100%;
-	height: calc(100vh + 30px);
-	z-index: 0;
+	height: 100%;
+	border-radius: 0px 0px 50% 50% / 0px 0px 5% 5%;
+	background: linear-gradient(45deg, var(--purple) 0%, var(--green));
+	overflow: hidden;
 }
-.ball {
-	position: absolute;
-}
+
 .ball:nth-child(1) {
 	top: 40px;
 	left: 0;
+	width: 93px;
+	height: 93px;
+	background: linear-gradient(45deg, #9338d7, #558dad);
 }
 .ball:nth-child(2) {
 	top: 55px;
 	left: 282px;
+	width: 258px;
+	height: 258px;
+	background: linear-gradient(55deg, #9338d7, #5d9abd);
 }
 .ball:nth-child(3) {
-	bottom: 31px;
+	bottom: 11px;
 	left: 0;
+	width: 286px;
+	height: 286px;
+	background: linear-gradient(45deg, var(--purple) 30%, #5d9abd);
 }
 .ball:nth-child(4) {
 	top: 246px;
 	right: 236px;
+	width: 93px;
+	height: 93px;
+	background: linear-gradient(35deg, #5d9abd, var(--green));
 }
 .ball:nth-child(5) {
 	bottom: 52px;
 	right: -170px;
+	width: 360px;
+	height: 360px;
+	background: linear-gradient(0deg, #41a79f, #25cf8c);
 }
 .Arrow {
 	display: block;
-	position: absolute;
-	bottom: 0;
 	left: 50%;
 	margin: 0 auto;
 	width: 20px;
