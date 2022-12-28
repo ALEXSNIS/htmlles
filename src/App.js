@@ -1,8 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Header, BLockInfo } from './Components'
+import { Header, BLockInfo, Arrow } from './Components'
 import { Main } from './Pages'
-import { El1, El2, El3, El4, El5, Ardown } from './assets'
 function App() {
 	return (
 		<div className='App'>
@@ -14,10 +13,7 @@ function App() {
 						<ellipse className='ball' />
 						<ellipse className='ball' />
 						<ellipse className='ball' />
-
-						<a href='#test' className='Arrow'>
-							<img src={Ardown} alt='arrow down' />
-						</a>
+						<Arrow scrollId='advantage' color='white' scrollOffset={-100} />
 					</div>
 				</div>
 				<div className='main'>
