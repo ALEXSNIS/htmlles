@@ -20,7 +20,7 @@ export default class BlockVIdeo extends React.Component {
 					autoPlay
 					loop
 					muted
-					className='videoPresentation'
+					className='videoPresentation wow fadeIn'
 				/>
 				<NavLink className='blockBtn'>начать обучение</NavLink>
 			</div>

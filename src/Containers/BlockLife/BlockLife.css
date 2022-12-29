@@ -1,37 +1,51 @@
-.BlockVideo {
+.BlockLife {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100%;
-	background-color: #e3e3e3;
 	border-radius: 0px 0px 50% 50% / 0px 0px 3% 3%;
+	background: linear-gradient(45deg, #558dad, var(--green));
 }
-.videoTitle {
-	margin-top: 50px;
+.LifeTitle {
 	font-size: 28px;
 	font-weight: 600;
-	color: #00363c;
-	margin-bottom: 46px;
-}
-.videoTitleBottom {
-	font-size: 16px;
-	font-weight: 400;
-	color: #444444;
-	max-width: 550px;
-	text-align: center;
-	margin-bottom: 90px;
-}
-.videoPresentation {
-	max-width: 770px;
-	box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
-	border-radius: 5px;
-	margin-bottom: 85px;
-}
-.videoTitle,
-.videoTitleBottom,
-.videoPresentation {
+	color: #fff;
+	margin: 195px 0 80px 0;
 	animation-duration: 1.7s;
 	animation-name: fadeIn;
+}
+.statContainers {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+	z-index: 1;
+	margin-bottom: 100px;
+}
+.LifeTitle,
+.statContainers {
+	animation-duration: 1.7s;
+	animation-name: fadeIn;
+}
+.statItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 220px;
+	height: 220px;
+	background-color: #fff;
+	border-radius: 100%;
+}
+.statNumbers {
+	font-size: 60px;
+	font-weight: 700;
+	color: var(--green);
+}
+.statText {
+	font-size: 16px;
+	font-weight: 400;
+	color: #565656;
 }
 .blockBtn {
 	padding: 10px 24px;
@@ -43,7 +57,7 @@
 	font-size: 12px;
 	position: relative;
 	z-index: 1;
-	margin-bottom: 90px;
+	margin-bottom: 96px;
 }
 .blockBtn::before {
 	position: absolute;
