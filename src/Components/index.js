@@ -1,3 +1,5 @@
 export { default as Header } from './header/Header'
 export { default as BLockInfo } from './BlockInfo/BlockInfo'
 export { default as Arrow } from './Arrow/Arrow'
+export { default as SimpleSlider } from './Slider/Slider'
+export { default as Footer } from './Footer/Footer'

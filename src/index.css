@@ -3,7 +3,7 @@
 :root {
 	--font-family: 'Montserrat', sans-serif;
 
-	--bg: #fff;
+	--bg: linear-gradient(90deg, var(--purple) 0%, var(--green));
 
 	--green: #13e780;
 	--blue: #03daf2;

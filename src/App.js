@@ -1,6 +1,6 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Header, BLockInfo, Arrow } from './Components'
+import { Header, BLockInfo, Arrow, Footer } from './Components'
 import { Main } from './Pages'
 function App() {
 	return (
@@ -25,6 +25,7 @@ function App() {
 				<Routes>
 					<Route path='/' element={<Main />} />
 				</Routes>
+				<Footer />
 			</BrowserRouter>
 		</div>
 	)

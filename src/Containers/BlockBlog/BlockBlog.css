@@ -1,0 +1,53 @@
+.BlockBlog {
+	display: grid;
+	grid-template-areas:
+		't t t'
+		'. . .'
+		'b b b';
+	justify-content: space-around;
+	row-gap: 80px;
+	width: 100%;
+	padding: 0 25%;
+	background-color: #e3e3e3;
+	border-radius: 0px 0px 50% 50% / 0px 0px 3% 3%;
+}
+.BlockTitle {
+	grid-area: t;
+	justify-self: center;
+}
+.blogItem {
+	display: flex;
+	flex-direction: column;
+	width: 280px;
+}
+.blogLogo {
+	height: 150px;
+	object-fit: cover;
+}
+.BlockBlog .blockBtn {
+	grid-area: b;
+	justify-self: center;
+}
+.BlockTitle {
+	font-size: 28px;
+	color: #00363c;
+	font-weight: 600;
+	/* margin-bottom: 80px; */
+	text-align: center;
+	margin-top: 64px;
+}
+.blogTitle {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--white);
+	padding: 20px 26px;
+	background-image: linear-gradient(90deg, #03daf2, #13e780);
+}
+.blogCategory {
+	font-size: 14px;
+	font-weight: 400;
+	color: #707070;
+	padding: 12px 15px;
+	width: 100%;
+	background-color: var(--white);
+}

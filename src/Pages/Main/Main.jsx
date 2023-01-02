@@ -5,7 +5,9 @@ import {
 	BlockVideo,
 	BlockComparison,
 	BlockLife,
+	BlockBlog,
 } from '../../Containers'
+import { SimpleSlider } from '../../Components'
 import { Arrow } from '../../Components'
 function Main() {
 	return (
@@ -33,7 +35,17 @@ function Main() {
 				<ellipse className={s.lifeBall} />
 				<ellipse className={s.lifeBall} />
 				<BlockLife />
-				<Arrow scrollId='comparison' color='white' />
+				<Arrow scrollId='slider' color='white' />
+			</section>
+			<section className={s.section} id='slider'>
+				<ellipse className={s.sliderBall} />
+				<ellipse className={s.sliderBall} />
+				<ellipse className={s.sliderBall} />
+				<SimpleSlider />
+				<Arrow scrollId='blog' color='black' />
+			</section>
+			<section className={s.section} id='blog'>
+				<BlockBlog />
 			</section>
 		</div>
 	)

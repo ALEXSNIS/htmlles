@@ -1,0 +1,54 @@
+.BLockSlider {
+	display: flex;
+	flex-direction: column;
+	padding: 0 15%;
+	background-color: var(--white);
+	border-radius: 0px 0px 50% 50% / 0px 0px 3% 3%;
+}
+.sliderTitle {
+	margin-top: 150px;
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 80px;
+	color: #00363c;
+	align-self: center;
+}
+.slider {
+	margin-bottom: 170px;
+}
+.sliderTitle,
+.slider {
+	animation-duration: 1.7s;
+	animation-name: fadeIn;
+}
+.slideItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 364px;
+	margin: auto;
+}
+.itemFace {
+	width: 170px;
+	height: 170px;
+	margin-bottom: 20px;
+}
+.itemName {
+	font-size: 20px;
+	font-weight: 500;
+	color: #565656;
+	margin-bottom: 5px;
+}
+.itemTime {
+	font-size: 12px;
+	font-weight: 300;
+	color: #00363c;
+	margin-bottom: 20px;
+}
+.itemComent {
+	color: #565656;
+	font-weight: 400;
+	font-size: 16px;
+	max-width: 364px;
+	text-align: center;
+}
